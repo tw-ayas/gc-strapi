@@ -1,0 +1,22 @@
+fragment RowContentLinks on Rowcontentlinks {
+  title
+  contentLinks {
+    data {
+      id
+      attributes {
+        title
+        description
+        url
+        asset {
+          data{
+            attributes {
+              File {
+                ...File
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

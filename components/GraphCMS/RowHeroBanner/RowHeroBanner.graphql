@@ -1,0 +1,23 @@
+fragment RowHeroBanner on Rowherobanner {
+  asset {
+    data {
+      attributes {
+        size
+        width
+        height
+        url
+        File {
+          ...FileData
+        }
+      }
+    }
+  }
+  copy
+  pageLinks {
+    data{
+      attributes {
+        ...PageLink
+      }
+    }
+  }
+}

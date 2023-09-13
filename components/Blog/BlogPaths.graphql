@@ -1,0 +1,20 @@
+query BlogPaths {
+  pagelinks(filters: {
+    and: [
+      {url: {startsWith: "blog/"}},
+      {url : {not : {startsWith: "blog/tagged/"}}}
+    ] }
+  ) {
+    data{
+      id
+    }
+    meta {
+      pagination {
+        page
+        pageSize
+        pageCount
+        total
+      }
+    }
+  }
+}

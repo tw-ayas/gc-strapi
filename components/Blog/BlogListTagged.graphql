@@ -1,0 +1,16 @@
+query BlogListTagged($currentUrl: [String!]!, $first: Int = 4, $skip: Int = 0, $tagged: String) {
+  blogPosts: pages(
+    filters: {
+      url: {startsWith: "blog/"},
+      related_pages: { url: {contains: $tagged }},
+      and: [{url:{notIn:  $currentUrl}}]
+    }
+    sort: "date:desc"
+  ) {
+    data{
+      attributes {
+        ...BlogItem
+      }
+    }
+  }
+}

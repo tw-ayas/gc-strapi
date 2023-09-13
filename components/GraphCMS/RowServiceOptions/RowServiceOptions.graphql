@@ -1,0 +1,10 @@
+fragment RowServiceOptions on Rowserviceoptions {
+  title
+  serviceOptions {
+    data {
+      attributes{
+        ...PageLink
+      }
+    }
+  }
+}

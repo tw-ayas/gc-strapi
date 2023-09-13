@@ -1,0 +1,4 @@
+query CategoryPage($url: String!, $locale: I18NLocaleCode) {
+  ...PageContentQueryFragment
+  ...CategoryQueryFragment
+}

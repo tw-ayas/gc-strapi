@@ -1,0 +1,14 @@
+query PagesStaticPaths($urlStartsWith: String!, $first: Int = 1000, $locale: I18NLocaleCode) {
+  pages(
+    filters: {url: {eq: $urlStartsWith }}
+    pagination: {page: 1, pageSize: $first}
+  )
+  {
+    data{
+      attributes {
+        url
+        metaRobots
+      }
+    }
+  }
+}

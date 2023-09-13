@@ -1,0 +1,12 @@
+fragment File on UploadFileEntityResponse @injectable {
+    data{
+        attributes {
+            url
+            width
+            height
+            mime
+            size
+            alt: alternativeText
+        }
+    }
+}

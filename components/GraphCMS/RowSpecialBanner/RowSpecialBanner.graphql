@@ -1,0 +1,20 @@
+fragment RowSpecialBanner on Rowspecialbanner {
+  asset {
+    data {
+      attributes {
+        File {
+          ...File
+        }
+      }
+    }
+  }
+  copy
+  pageLinks {
+    data{
+      attributes {
+        ...PageLink
+      }
+    }
+  }
+  topic
+}

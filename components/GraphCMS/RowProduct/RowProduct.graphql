@@ -1,0 +1,22 @@
+fragment RowProduct on Rowproduct {
+  variant
+  identity
+  asset {
+    data{
+      attributes {
+        File {
+          ...File
+        }
+      }
+    }
+  }
+  title
+  copy
+  pageLinks {
+    data{
+      attributes {
+        ...PageLink
+      }
+    }
+  }
+}

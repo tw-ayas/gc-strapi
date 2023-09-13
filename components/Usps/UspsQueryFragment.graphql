@@ -1,0 +1,31 @@
+fragment UspsQueryFragment on Query {
+  sidebarUsps: uspsMultiple(filters: { identity: {eq:"sidebarusps" }}) {
+    data {
+      id
+      attributes {
+        uspsMultiple{
+          data {
+            attributes {
+              ...PageLink
+            }
+          }
+        }
+      }
+    }
+  }
+  uspsMultiple(filters: { identity: {eq:"contentusps" }}) {
+    data
+    {
+      id
+       attributes {
+         uspsMultiple{
+           data {
+             attributes {
+               ...PageLink
+            }
+          }
+        }
+      }
+    }
+  }
+}

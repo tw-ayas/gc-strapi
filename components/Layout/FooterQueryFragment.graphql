@@ -1,0 +1,24 @@
+fragment FooterQueryFragment on Query {
+  footers(filters:{identity: {eq: "footer"}}, locale: $locale){
+    data {
+      id
+      attributes {
+        social_links{
+          data {
+            attributes {
+              ...PageLink
+            }
+          }
+        }
+        copyright
+        legal_links{
+          data {
+            attributes {
+              ...PageLink
+            }
+          }
+        }
+      }
+    }
+  }
+}

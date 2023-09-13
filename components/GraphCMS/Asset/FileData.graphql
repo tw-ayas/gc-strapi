@@ -1,0 +1,10 @@
+fragment FileData on UploadFileEntityResponse {
+    data{
+        attributes {
+            url
+            size
+            height
+            width
+        }
+    }
+}

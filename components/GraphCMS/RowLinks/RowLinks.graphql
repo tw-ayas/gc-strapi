@@ -1,0 +1,13 @@
+fragment RowLinks on Rowlinks {
+  title
+  copy
+  linksVariant
+  pageLinks {
+    data {
+      id
+      attributes {
+        ...PageLink
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+fragment RowColumnThree on Rowcolumnthree {
+  colOne
+  colTwo
+  colThree
+}

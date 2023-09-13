@@ -1,0 +1,42 @@
+fragment PageContentQueryFragment on Query {
+  pages(filters: { url: {eq:$url }}, locale: $locale) {
+    __typename
+    data {
+      attributes {
+        title
+        metaTitle
+        metaRobots
+        url
+        author
+        metaDescription
+        date
+        related_pages {
+          data {
+            attributes{
+              title
+              url
+            }
+          }
+        }
+        asset {
+          data {
+            attributes {
+              File {
+                ...File
+              }
+            }
+          }
+        }
+        ...RowRenderer
+      }
+    }
+    meta {
+      pagination {
+        page
+        pageSize
+        pageCount
+        total
+      }
+    }
+  }
+}

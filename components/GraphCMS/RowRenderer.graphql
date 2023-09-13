@@ -1,0 +1,137 @@
+fragment RowRenderer on Page {
+    content {
+        __typename
+        ... on ComponentRBContent{
+            id
+            rowblogcontent{
+                data {
+                    id
+                    attributes {
+                        ...RowBlogContent
+                    }
+                }
+            }
+        }
+        ... on ComponentRBLklist{
+            id
+            rowbuttonlinklist{
+                data {
+                    id
+                    attributes {
+                        ...RowButtonLinkList
+                    }
+                }
+            }
+        }
+        ... on ComponentRCLink{
+            id
+            rowcontentlink {
+                data {
+                    id
+                    attributes {
+                        ...RowContentLinks
+                    }
+                }
+            }
+        }
+        ... on ComponentRHerobanner{
+            id
+            rowherobanner {
+                data {
+                    id
+                    attributes {
+                        ...RowHeroBanner
+                    }
+                }
+            }
+        }
+        ... on ComponentRLink{
+            id
+            rowlink {
+                data {
+                    id
+                    attributes {
+                        ...RowLinks
+                    }
+                }
+            }
+        }
+        ... on ComponentRCOne{
+            id
+            rowcolumnone{
+                data{
+                    id
+                    attributes{
+                        ...RowColumnOne
+                    }
+                }
+            }
+        }
+        ... on ComponentRCTwo{
+            id
+            rowcolumntwo{
+                data{
+                    id
+                    attributes{
+                        ...RowColumnTwo
+                    }
+                }
+            }
+        }
+        ... on ComponentRCThree{
+            id
+            rowcolumnthree{
+                data{
+                    id
+                    attributes{
+                        ...RowColumnThree
+                    }
+                }
+            }
+        }
+        ... on ComponentRProduct{
+            id
+            rowproduct {
+                data{
+                    id
+                    attributes {
+                        ...RowProduct
+                    }
+                }
+            }
+        }
+        ... on ComponentRQuotes{
+            id
+            rowquote {
+                data {
+                    id
+                    attributes {
+                        ...RowQuote
+                    }
+                }
+            }
+        }
+        ... on ComponentRSBanner{
+            id
+            rowspecialbanner {
+                data {
+                    id
+                    attributes {
+                        ...RowSpecialBanner
+                    }
+                }
+            }
+        }
+        ... on ComponentRSOptions{
+            id
+            rowserviceoption {
+                data {
+                    id
+                    attributes {
+                        ...RowServiceOptions
+                    }
+                }
+            }
+        }
+    }
+}

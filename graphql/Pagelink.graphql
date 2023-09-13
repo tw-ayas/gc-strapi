@@ -1,0 +1,14 @@
+fragment PageLink on Pagelink {
+  title
+  url
+  description
+  asset {
+    data {
+      attributes {
+        File {
+          ...File
+        }
+      }
+    }
+  }
+}

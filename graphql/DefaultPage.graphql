@@ -1,0 +1,4 @@
+# @deprecated, please use pageContent form @graphcommerce/graphcms-ui
+query DefaultPage($url: String!, $locale: I18NLocaleCode) {
+  ...PageContentQueryFragment
+}

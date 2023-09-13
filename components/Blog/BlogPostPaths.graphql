@@ -1,0 +1,9 @@
+query BlogPostPaths {
+  pages(filters: { url: {not : {startsWith: "blog/tagged/"}}, and: [{url: {startsWith: "blog/"}}] }) {
+    data{
+      attributes {
+        url
+      }
+    }
+  }
+}

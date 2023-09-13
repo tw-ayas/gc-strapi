@@ -1,0 +1,10 @@
+fragment BlogTags on Page {
+  related_pages {
+    data {
+      attributes {
+        title
+        url
+      }
+    }
+  }
+}

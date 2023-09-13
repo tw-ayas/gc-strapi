@@ -1,0 +1,9 @@
+query BlogPostTaggedPaths {
+  pages(filters: { url: {startsWith: "blog/tagged/"}}) {
+    data{
+      attributes {
+        url
+      }
+    }
+  }
+}

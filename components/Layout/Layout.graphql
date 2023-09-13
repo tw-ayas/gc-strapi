@@ -1,0 +1,7 @@
+query Layout($locale: I18NLocaleCode) {
+  menu: categories {
+    __typename
+  }
+  ...MenuQueryFragment
+  ...FooterQueryFragment
+}

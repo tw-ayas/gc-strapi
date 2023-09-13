@@ -1,0 +1,12 @@
+extend input GraphCommerceConfig {
+    """
+    Strapi Endpoint Url
+    """
+    strapiEndpoint: String
+
+    """
+    Strapi Authentication token
+    """
+    strapiAuthToken: String
+
+}
